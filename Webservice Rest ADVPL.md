@@ -4,9 +4,8 @@ ESTUDOS ADVPL - Webservice Rest
 </h1>
 
 # Índice 
-
 * [Configurar Server](#Server)
-
+* [Classe Rest](#Classe)
 
 # Server
 
@@ -64,6 +63,7 @@ Segue imagem de como o "appserver.ini" ficou após a inserção dos itens.</h3> 
 
 
 
+# Classe
 
 Desenvolvendo sua Classe Rest ADVPL
 Para começarmos a desenvolver nossa Primeira classe Rest em ADVPL vamos precisar entender um pouco a ideia dos verbos existentes nesta representação:
