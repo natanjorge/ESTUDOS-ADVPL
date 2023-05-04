@@ -5,7 +5,7 @@ ESTUDOS ADVPL - Webservice Rest
 
 # Índice 
 * [Configurar Server](#Server)
-* [Classe Rest](#Classe)
+* [Desenvolvendo a Classe Rest](#Classe)
 
 # Server
 
