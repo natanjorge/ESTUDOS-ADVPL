@@ -59,28 +59,20 @@ Segue imagem de como o "appserver.ini" ficou após a inserção dos itens.</h3> 
 
 ![image](https://user-images.githubusercontent.com/115876464/236206886-3c5b1cd9-b4aa-4060-aa99-59a57d8ec9c8.png)
 
-
-
-
-
 # Classe
 
-Desenvolvendo sua Classe Rest ADVPL
-Para começarmos a desenvolver nossa Primeira classe Rest em ADVPL vamos precisar entender um pouco a ideia dos verbos existentes nesta representação:
+Desenvolvendo a classe Rest ADVPL <br>
 
-POST – Verbo responsável por realizar inclusões de registros no sistema.
-PUT – Verbo  responsável por realizar alterações de registros no sistema.
-GET – Verbo responsável por realizar o retorno de registros do sistema.
-DELETE – Verbo  responsável por realizar exclusões de registros do sistema.
-Definidas as responsabilidades de cada método podemos começar a exemplificar cada um deles.
+<h1 align="left">
+Alterei os dados do "appserver.ini" da pasta "serverRest" como mostra imagem abaixo.
+</h1>
 
-Para isso, primeiro precisamos a construir a estrutura base do nosso fonte ADVPL para nossa classe Rest.
+Verbos existentes:  <br>
 
-
-
-
-
-
+POST – Realiza inclusões de registros. <br>
+PUT – Realiza alterações de registros. <br>
+GET – Realiza o retorno de registros. <br>
+DELETE – Realiza exclusões de registros. <br> <br>
 
     #include 'Totvs.ch'
     #include 'Restful.ch'
@@ -111,10 +103,10 @@ Para isso, primeiro precisamos a construir a estrutura base do nosso fonte ADVPL
     while (cAlias)->(!EOF())
     
         AADD( oJson['Produtos'], JSONObject():New())
-        oJson['Produtos'][len(oJson['Produtos'])]["Cod"] := (cAlias)->(B1_COD)
+        oJson['Produtos'][len(oJson['Produtos'])]["Cod"]       := (cAlias)->(B1_COD)
         oJson['Produtos'][len(oJson['Produtos'])]["Descricao"] := (cAlias)->(B1_DESC)
-        oJson['Produtos'][len(oJson['Produtos'])]["Preco"] := (cAlias)->(B1_PRV1)
-        oJson['Produtos'][len(oJson['Produtos'])]["UN"] := (cAlias)->(B1_UM)
+        oJson['Produtos'][len(oJson['Produtos'])]["Preco"]     := (cAlias)->(B1_PRV1)
+        oJson['Produtos'][len(oJson['Produtos'])]["UN"]        := (cAlias)->(B1_UM)
 
         (cAlias)->(DBSKIP())
 
